@@ -1,13 +1,13 @@
 module.exports = function check(str, bracketsConfig) {
   
-  let flag, substr;
+  let flag, mod;
 
   while (true) {
     flag=false;
-    bracketsConfig.forEach(config => {
-      substr=config.join('');
-      if (str.includes(substr) ) {
-        str=str.replace(substr, '');
+    bracketsConfig.forEach(conf => {
+      mod=conf.join('');
+      if (str.includes(mod)) {
+        str=str.replace(mod, '');
         flag=true;
       }
     });
