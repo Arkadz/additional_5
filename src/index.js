@@ -11,7 +11,7 @@ module.exports = function check(str, bracketsConfig) {
         flag=true;
       }
     });
-    if (!flag) break;
+    if (!flag) {break;}
   }
 
   return str.length==0;
